@@ -4,14 +4,10 @@ import { ArrowRight, Play, Shield, Zap, Target } from "lucide-react";
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-hero"></div>
-      
-      {/* Animated Background Elements */}
+      {/* Subtle Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '2s' }}></div>
-        <div className="absolute top-1/2 left-1/2 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
+        <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/5 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/3 rounded-full blur-3xl animate-float" style={{ animationDelay: '4s' }}></div>
       </div>
 
       <div className="container mx-auto px-6 relative z-10">
@@ -30,7 +26,7 @@ const HeroSection = () => {
               <h1 className="hero-title">
                 Ethical AI
                 <br />
-                <span className="text-secondary">Auditor</span>
+                <span className="text-primary">Auditor</span>
               </h1>
               <p className="hero-subtitle">
                 Scalable, Transparent & Fair AI for Modern Enterprises.
@@ -46,11 +42,11 @@ const HeroSection = () => {
                 <span>Lightning Fast</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
-                <Shield className="w-5 h-5 text-secondary" />
+                <Shield className="w-5 h-5 text-primary" />
                 <span>Enterprise Secure</span>
               </div>
               <div className="flex items-center space-x-2 text-sm">
-                <Target className="w-5 h-5 text-accent" />
+                <Target className="w-5 h-5 text-primary" />
                 <span>99.9% Accurate</span>
               </div>
             </div>
@@ -70,15 +66,15 @@ const HeroSection = () => {
             {/* Trust Indicators */}
             <div className="flex items-center space-x-6 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 <span>SOC 2 Compliant</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 <span>GDPR Ready</span>
               </div>
               <div className="flex items-center space-x-2">
-                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
                 <span>ISO 27001</span>
               </div>
             </div>
@@ -86,7 +82,7 @@ const HeroSection = () => {
 
           {/* Right Column - 3D Spline Animation */}
           <div className="lg:order-last order-first">
-            <div className="spline-container animate-glow">
+            <div className="spline-container">
               <iframe 
                 src='https://my.spline.design/robotfollowcursorforlandingpage-Pw05Xa319c0OYvpJJ9nL7w4c/' 
                 frameBorder='0' 
@@ -94,8 +90,8 @@ const HeroSection = () => {
                 title="AI Robot Animation"
               />
               {/* Fallback overlay for loading */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-2xl flex items-center justify-center">
-                <div className="w-32 h-32 bg-primary/30 rounded-full animate-pulse"></div>
+              <div className="absolute inset-0 bg-card/50 rounded-xl flex items-center justify-center">
+                <div className="w-32 h-32 bg-primary/20 rounded-full animate-pulse"></div>
               </div>
             </div>
           </div>
